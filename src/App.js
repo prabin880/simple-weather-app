@@ -105,7 +105,7 @@ export default function App() {
 			const key = process.env.REACT_APP_API_KEY;
 			if (lat && lon) {
 				fetch(
-					`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${key}`
+					`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${key}`
 				)
 					.then(resolve => resolve.json())
 					.then(data => {

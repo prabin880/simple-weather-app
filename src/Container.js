@@ -8,7 +8,7 @@ const Container = ({ name, temp, weather }) => {
 					Temperature: {temp['temp']}&deg;C{' '}
 					{weather.icon && (
 						<img
-							src={`http://openweathermap.org/img/wn/${weather.icon}@2x.png`}
+							src={`https://openweathermap.org/img/wn/${weather.icon}@2x.png`}
 							alt=""
 						/>
 					)}
