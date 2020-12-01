@@ -33,12 +33,10 @@ export default function App() {
 					return response.json();
 				} else {
 					setShowTemp(false);
-					console.log('yaay');
 				}
 			})
 			.then(data => {
 				if (data) {
-					console.log('no');
 					setTemp(data.main);
 					setWeather(data.weather[0]);
 					setCityName(data.name);
