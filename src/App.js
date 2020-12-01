@@ -22,6 +22,7 @@ export default function App() {
 	const [weather, setWeather] = useState({});
 	const [cityName, setCityName] = useState('');
 	const [result, setResult] = useState(false);
+	const [showArea, setShowArea] = useState(false);
 
 	function selectCity(city) {
 		const key = process.env.REACT_APP_API_KEY;
@@ -131,11 +132,17 @@ export default function App() {
 		}
 	}, [result]);
 
+	useEffect(() => {
+		if (showArea) {
+			setLocation(useLatLon);
+		}
+	}, [showArea]);
+
 	return (
 		<div className="App">
 			<div className="weather__info">
 				<h4>{today}</h4>
-				<button onClick={() => setLocation(useLatLon)}>
+				<button onClick={() => setShowArea(true)}>
 					Get Weather In Your Area
 				</button>
 
