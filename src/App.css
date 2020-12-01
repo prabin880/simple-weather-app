@@ -61,3 +61,24 @@ input {
 .form {
 	display: flex;
 }
+
+@media only screen and (max-width: 600px) {
+	.weather__info {
+		width: 150px;
+	}
+	input {
+		width: 100px;
+	}
+	button,
+	input,
+	h3,
+	h4 {
+		font-size: xx-small;
+	}
+	img {
+		display: none;
+	}
+	button {
+		font-weight: lighter;
+	}
+}
