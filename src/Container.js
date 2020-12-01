@@ -6,12 +6,12 @@ const Container = ({ name, temp, weather }) => {
 			<div className="weather_icon">
 				<h3>
 					Temperature: {temp['temp']}&deg;C{' '}
-					{weather.icon && (
+					{/* {weather.icon && (
 						<img
 							src={`http://openweathermap.org/img/wn/${weather.icon}@2x.png`}
 							alt=""
 						/>
-					)}
+					)} */}
 				</h3>
 			</div>
 
